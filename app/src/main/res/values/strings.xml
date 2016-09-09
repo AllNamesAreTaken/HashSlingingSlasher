@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Hash Slinging Slasher</string>
+    <string name="phrase">Passphrase</string>
+    <string name="password">Password</string>
+    <string name="activate_button">Go</string>
+    <string name="select_salt">Salt</string>
+    <string name="input_password">Pass</string>
+    <string name="settings">Other</string>
+    <string name="PasswordChange">Change Password</string>
+    <string name="Back">Back</string>
+    <string name="Set">Set</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Select">Select</string>
+    <string name="Search">Search</string>
+    <string name="Salt_Location">Salt Location</string>
+    <string name="Create_Salt">Create</string>
+    <string name="characters_text"><strike>Change Characters</strike></string>
+    <string name="change_length"><strike>Change Length</strike></string>
+    <string name="change_hash"><strike>Change Hash</strike></string>
+    <string name="notes_text"><strike>Notes</strike></string>
+    <string name="android_watch_text"><strike>Android Watch</strike></string>
+    <string name="about_text"><strike>About</strike></string>
+    <string name="options_back">Back</string>
+    <string name="salt_file_name">File Name</string>
+</resources>
