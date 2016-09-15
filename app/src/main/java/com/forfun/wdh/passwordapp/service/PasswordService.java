@@ -79,7 +79,7 @@ public class PasswordService {
 		if(password == null || password.equals("")){
 			throw new MissingPasswordException();
 		}
-		if(salt == null || hasSalt == false) {
+		if(salt == null || !hasSalt) {
 			throw new MissingSaltException();
 		}
 		String compiled = password + passphrase;
@@ -176,5 +176,21 @@ public class PasswordService {
 
 	public void setCharProfile(String charProfile) {
 		this.charProfile = charProfile;
+	}
+
+	public boolean passwordDirExists(String dir) {
+		File dirLoc = new File(dir);
+		return dirLoc.exists();
+	}
+
+
+	public void createPasswordDirectory(String dir) {
+//		File dirLoc = new File(dir);
+//		if(!dirLoc.exists() || !dirLoc.isDirectory())
+//		{
+//			return;
+//		}
+		File pasDir = new File(dir);
+		pasDir.mkdirs();
 	}
 }

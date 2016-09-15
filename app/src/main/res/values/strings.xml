@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Hash Slinging Slasher</string>
-    <string name="phrase">Passphrase</string>
+    <string name="phrase">Keyword</string>
     <string name="password">Password</string>
     <string name="activate_button">Go</string>
     <string name="select_salt">Salt</string>
@@ -18,8 +18,9 @@
     <string name="change_length"><strike>Change Length</strike></string>
     <string name="change_hash"><strike>Change Hash</strike></string>
     <string name="notes_text"><strike>Notes</strike></string>
-    <string name="android_watch_text"><strike>Android Watch</strike></string>
+    <string name="android_watch_text"><strike>Smart Watch</strike></string>
     <string name="about_text"><strike>About</strike></string>
+    <string name="donate_text"><strike>Donate</strike></string>
     <string name="options_back">Back</string>
     <string name="salt_file_name">File Name</string>
 </resources>
