@@ -7,6 +7,7 @@
     <string name="input_password">Pass</string>
     <string name="settings">Other</string>
     <string name="PasswordChange">Change Password</string>
+    <string name="CharacterChange">Change Character Profile</string>
     <string name="Back">Back</string>
     <string name="Set">Set</string>
     <string name="Cancel">Cancel</string>
@@ -14,8 +15,8 @@
     <string name="Search">Search</string>
     <string name="Salt_Location">Salt Location</string>
     <string name="Create_Salt">Create</string>
-    <string name="characters_text"><strike>Change Characters</strike></string>
-    <string name="change_length"><strike>Change Length</strike></string>
+    <string name="characters_text">Change Characters</string>
+    <string name="change_length">Change Rounds</string>
     <string name="change_hash"><strike>Change Hash</strike></string>
     <string name="notes_text"><strike>Notes</strike></string>
     <string name="android_watch_text"><strike>Smart Watch</strike></string>
@@ -23,4 +24,7 @@
     <string name="donate_text"><strike>Donate</strike></string>
     <string name="options_back">Back</string>
     <string name="salt_file_name">File Name</string>
+    <string name="title_activity_change_characters_view">ChangeCharactersView</string>
+    <string name="ChangeRounds">Change Rounds</string>
+    <string name="allow_persisting_data">Persisting Data</string>
 </resources>

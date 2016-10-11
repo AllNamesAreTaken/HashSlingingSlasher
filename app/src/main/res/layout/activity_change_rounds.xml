@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="20dp"
@@ -12,52 +13,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/PasswordChange"
+        android:text="@string/ChangeRounds"
         android:id="@+id/textView2"
         android:layout_gravity="left|top"
         android:textSize="22dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"  />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:inputType="number"
         android:ems="10"
-        android:maxLines="1"
-        android:id="@+id/passwordBox"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="horizontal"
+        android:id="@+id/editTextNum" />
+
+    <Button
+        android:text="Reset To Default"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="3"
-        android:id="@+id/linearLayout4">
+        android:onClick="onClickResetToDefaultRounds"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/button4" />
 
-        <Space
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2" />
-    </LinearLayout>
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:weightSum="3"
+        android:layout_height="match_parent"
         android:gravity="bottom">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/Set"
-            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_light"
-            android:onClick="onClickChangePassword"
-            android:layout_marginBottom="10dp" />
-
+            android:onClick="onClickChangeRounds"
+            android:id="@+id/button3"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>

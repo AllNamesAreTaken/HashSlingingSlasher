@@ -29,7 +29,9 @@
 
         <activity android:name="com.forfun.wdh.passwordapp.view.SaltSelectActivity" />
         <activity android:name="com.forfun.wdh.passwordapp.view.PasswordSelectActivity" />
-        <activity android:name="com.forfun.wdh.passwordapp.view.OptionsViewActivity"></activity>
+        <activity android:name="com.forfun.wdh.passwordapp.view.OptionsViewActivity" />
+        <activity android:name="com.forfun.wdh.passwordapp.view.ChangeCharactersActivity" />
+        <activity android:name="com.forfun.wdh.passwordapp.view.ChangeRoundsActivity"></activity>
     </application>
 
 </manifest>
