@@ -33,6 +33,12 @@ public class OptionsViewActivity extends AppCompatActivity {
         startActivityForResult(i, 2);
     }
 
+    public void onPersistOptionsButton(View view) {
+        Intent i = new Intent(this, PersistOptionsActivity.class);
+        i.putExtra("pws", pws);
+        startActivityForResult(i, 3);
+    }
+
     @Override
     public void onBackPressed() {
         Intent returnIntent = new Intent();
@@ -48,6 +54,10 @@ public class OptionsViewActivity extends AppCompatActivity {
                 pws = (PasswordService)data.getSerializableExtra("pws");
             }
         }if(requestCode == 2) {
+            if(resultCode == Activity.RESULT_OK) {
+                pws = (PasswordService)data.getSerializableExtra("pws");
+            }
+        }if(requestCode == 3) {
             if(resultCode == Activity.RESULT_OK) {
                 pws = (PasswordService)data.getSerializableExtra("pws");
             }

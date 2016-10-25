@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PasswordApp.iml" filepath="$PROJECT_DIR$/PasswordApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashSlingingSlasher.iml" filepath="$PROJECT_DIR$/HashSlingingSlasher.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

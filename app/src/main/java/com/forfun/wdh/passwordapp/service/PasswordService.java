@@ -271,7 +271,35 @@ public class PasswordService implements Serializable {
 		while (readStream.ready()) {
 			switch (readStream.read()) {
 				case 1:
-					setBaseDirectory(readStream.readLine());
+						setBaseDirectory(readStream.readLine());
+					break;
+				case 2:
+					if(readStream.read() == 1) {
+						setSaveSaltFile(true);
+					}else {
+						setSaveSaltFile(false);
+					}
+					break;
+				case 3:
+					if(readStream.read() == 1) {
+						setSaveCharProfile(true);
+					}else {
+						setSaveCharProfile(false);
+					}
+					break;
+				case 4:
+					if(readStream.read() == 1) {
+						setSaveHashAlgorithm(true);
+					}else {
+						setSaveHashAlgorithm(false);
+					}
+					break;
+				case 5:
+					if(readStream.read() == 1) {
+						setSaveRounds(true);
+					}else {
+						setSaveRounds(false);
+					}
 					break;
 				default:
 					break;

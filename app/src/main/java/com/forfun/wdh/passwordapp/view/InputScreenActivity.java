@@ -66,10 +66,14 @@ public class InputScreenActivity extends AppCompatActivity {
             pws.createMissingHSSDirectories();
             pws.loadSettings();
             pws.loadCache();
-            pws.loadSaltFile();
         }
         catch(Exception e) {
-
+            e.printStackTrace();
+        }
+        try {
+            pws.loadSaltFile();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -106,8 +110,8 @@ public class InputScreenActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         try {
-            pws.saveCache();
             pws.saveSettings();
+            pws.saveCache();
         }
         catch(Exception e) {
 
