@@ -296,6 +296,12 @@ public class PasswordService implements Serializable {
 					break;
 				case 5:
 					if(readStream.read() == 1) {
+						setSavePassword(true);
+					}else {
+						setSavePassword(false);
+					}
+				case 6:
+					if(readStream.read() == 1) {
 						setSaveRounds(true);
 					}else {
 						setSaveRounds(false);
@@ -342,6 +348,12 @@ public class PasswordService implements Serializable {
 
 		if(isSaveRounds()) {
 			writeStream.write(5);
+			writeStream.write(getPassword());
+			writeStream.newLine();
+		}
+
+		if(isSaveRounds()) {
+			writeStream.write(6);
 			writeStream.write(getRounds());
 			writeStream.newLine();
 		}
@@ -372,6 +384,9 @@ public class PasswordService implements Serializable {
 					setHashAlgorithm(readStream.readLine());
 					break;
 				case 5:
+					setPassword(readStream.readLine());
+					break;
+				case 6:
 					setRounds(readStream.read());
 					break;
 				default:

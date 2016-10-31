@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import com.example.williamdt_personal.passwordapp.R;
+import com.forfun.wdh.passwordapp.exceptions.MissingDirectoryException;
 import com.forfun.wdh.passwordapp.service.PasswordService;
 
 import java.io.File;
@@ -45,6 +46,9 @@ public class SaltSelectActivity extends AppCompatActivity {
     public void refreshFiles(){
         File dir = new File(saltLocationS);
         String[] files = dir.list();
+        if(files == null) {
+            return;
+        }
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, files);
         fileListView.setAdapter(adapter);
         fileListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -90,11 +94,15 @@ public class SaltSelectActivity extends AppCompatActivity {
                 String newName = input.getText().toString();
                 pws.setSaltFileName(newName);
                 try {
+                    pws.createMissingHSSDirectories();
                     //Handles setting saltName
                     pws.createNewSaltFile(newName);
                     //Must be loaded
                     pws.loadSaltFile();
                 } catch (IOException e) {
+                    e.printStackTrace();
+
+                } catch (MissingDirectoryException e) {
                     e.printStackTrace();
                 }
                 saltNameS = pws.getSaltFileName();
