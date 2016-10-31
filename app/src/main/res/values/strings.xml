@@ -20,7 +20,7 @@
     <string name="change_hash"><strike>Change Hash</strike></string>
     <string name="notes_text"><strike>Notes</strike></string>
     <string name="android_watch_text"><strike>Smart Watch</strike></string>
-    <string name="about_text"><strike>About</strike></string>
+    <string name="about_text">About/Donate</string>
     <string name="donate_text"><strike>Donate</strike></string>
     <string name="options_back">Back</string>
     <string name="salt_file_name">File Name</string>

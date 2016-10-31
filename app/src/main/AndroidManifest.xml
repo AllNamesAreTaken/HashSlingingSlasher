@@ -32,7 +32,8 @@
         <activity android:name="com.forfun.wdh.passwordapp.view.OptionsViewActivity" />
         <activity android:name="com.forfun.wdh.passwordapp.view.ChangeCharactersActivity" />
         <activity android:name="com.forfun.wdh.passwordapp.view.ChangeRoundsActivity" />
-        <activity android:name="com.forfun.wdh.passwordapp.view.PersistOptionsActivity"></activity>
+        <activity android:name="com.forfun.wdh.passwordapp.view.PersistOptionsActivity" />
+        <activity android:name="com.forfun.wdh.passwordapp.view.AboutActivity"></activity>
     </application>
 
 </manifest>

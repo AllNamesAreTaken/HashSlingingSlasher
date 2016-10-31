@@ -39,6 +39,11 @@ public class OptionsViewActivity extends AppCompatActivity {
         startActivityForResult(i, 3);
     }
 
+    public void onAboutButton(View view) {
+        Intent i = new Intent(this, AboutActivity.class);
+        startActivity(i);
+    }
+
     @Override
     public void onBackPressed() {
         Intent returnIntent = new Intent();
