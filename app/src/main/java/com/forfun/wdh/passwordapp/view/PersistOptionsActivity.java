@@ -6,8 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
-
-import com.example.williamdt_personal.passwordapp.R;
+import com.forfun.wdh.passwordapp.R;
 import com.forfun.wdh.passwordapp.service.PasswordService;
 
 public class PersistOptionsActivity extends AppCompatActivity {

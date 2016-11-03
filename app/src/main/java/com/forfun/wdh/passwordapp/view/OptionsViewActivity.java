@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-
-import com.example.williamdt_personal.passwordapp.R;
+import com.forfun.wdh.passwordapp.R;
 import com.forfun.wdh.passwordapp.service.PasswordService;
-
-import java.io.IOException;
 
 public class OptionsViewActivity extends AppCompatActivity {
     private PasswordService pws;

@@ -2,8 +2,7 @@ package com.forfun.wdh.passwordapp.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import com.example.williamdt_personal.passwordapp.R;
+import com.forfun.wdh.passwordapp.R;
 
 public class AboutActivity extends AppCompatActivity {
 

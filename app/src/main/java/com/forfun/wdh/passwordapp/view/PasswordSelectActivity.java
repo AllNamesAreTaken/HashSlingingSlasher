@@ -1,5 +1,5 @@
 package com.forfun.wdh.passwordapp.view;
-
+import com.forfun.wdh.passwordapp.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.williamdt_personal.passwordapp.R;
 
 public class PasswordSelectActivity extends AppCompatActivity {
 

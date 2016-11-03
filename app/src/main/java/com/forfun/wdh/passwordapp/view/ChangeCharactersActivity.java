@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.williamdt_personal.passwordapp.R;
+import com.forfun.wdh.passwordapp.R;
 import com.forfun.wdh.passwordapp.service.PasswordService;
 
 public class ChangeCharactersActivity extends AppCompatActivity {

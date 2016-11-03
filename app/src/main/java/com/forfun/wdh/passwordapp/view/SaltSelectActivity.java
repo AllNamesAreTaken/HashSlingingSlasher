@@ -3,7 +3,6 @@ package com.forfun.wdh.passwordapp.view;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Environment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.example.williamdt_personal.passwordapp.R;
+import com.forfun.wdh.passwordapp.R;
 import com.forfun.wdh.passwordapp.exceptions.MissingDirectoryException;
 import com.forfun.wdh.passwordapp.service.PasswordService;
 

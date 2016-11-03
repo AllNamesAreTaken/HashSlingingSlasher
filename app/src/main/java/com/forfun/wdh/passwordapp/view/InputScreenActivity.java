@@ -1,5 +1,5 @@
 package com.forfun.wdh.passwordapp.view;
-
+import com.forfun.wdh.passwordapp.R;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
@@ -15,10 +15,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.williamdt_personal.passwordapp.R;
 import com.forfun.wdh.passwordapp.exceptions.MissingCharProfileException;
 import com.forfun.wdh.passwordapp.exceptions.MissingDirectoryException;
 import com.forfun.wdh.passwordapp.exceptions.MissingPasswordException;
@@ -27,11 +25,6 @@ import com.forfun.wdh.passwordapp.service.PasswordService;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
